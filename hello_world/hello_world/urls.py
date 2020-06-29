@@ -22,4 +22,7 @@ urlpatterns = [
     path('hello/', views.hello),
     path('hello/<name>/', views.helloName),
     path('soma/<int:num1>/<int:num2>', views.soma),
+    path('sub/<int:num1>/<int:num2>', views.sub),
+    path('multi/<int:num1>/<int:num2>', views.multi),
+    path('div/<int:num1>/<int:num2>', views.div),
 ]

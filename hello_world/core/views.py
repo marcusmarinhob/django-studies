@@ -10,3 +10,12 @@ def helloName(request, name):
 
 def soma(request, num1, num2):
     return HttpResponse('<h1>{} + {} = {}</h1>'.format(num1, num2, num1+num2))
+
+def sub(request, num1, num2):
+    return HttpResponse('<h1>{} - {} = {}</h1>'.format(num1, num2, num1-num2))
+
+def multi(request, num1, num2):
+    return HttpResponse('<h1>{} * {} = {}</h1>'.format(num1, num2, num1*num2))
+
+def div(request, num1, num2):
+    return HttpResponse('<h1>{} / {} = {}</h1>'.format(num1, num2, num1/num2))
